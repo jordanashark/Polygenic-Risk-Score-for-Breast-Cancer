@@ -1,7 +1,4 @@
-# Polygenic-Risk-Score-for-Breast-Cancer
 # Breast Cancer Polygenic Risk Score Calculator
-
-A machine learning tool for calculating personalized breast cancer risk using genetic variants and clinical factors.
 
 ## Overview
 
@@ -16,20 +13,7 @@ This project implements a Polygenic Risk Score (PRS) system that aggregates the 
 - **Visualizations**: PRS distributions, ROC curves, feature importance plots
 - **Performance evaluation**: AUC-ROC, sensitivity, specificity, confusion matrices
 
-## Installation
 
-```bash
-pip install numpy pandas scikit-learn matplotlib seaborn
-```
-
-## Usage
-
-Run the main script:
-```bash
-python main.py
-```
-
-Or use the class programmatically:
 ```python
 from main import PolygeneticRiskScore
 
@@ -60,19 +44,6 @@ print(f"Lifetime Risk: {risk_metrics['absolute_risk']:.1f}%")
 - `prs_distribution.png` - Risk score distribution
 - `feature_importance.png` - Variant contribution analysis
 - `roc_curve.png` - Model performance visualization
-
-## SNP Database
-
-The model uses 10 well-validated breast cancer risk SNPs:
-
-| SNP ID | Gene/Locus | Risk Allele | Effect Size | MAF |
-|--------|------------|-------------|-------------|-----|
-| rs2981582 | FGFR2 | T | 0.26 | 0.38 |
-| rs3803662 | TOX3 | T | 0.20 | 0.25 |
-| rs889312 | MAP3K1 | C | 0.13 | 0.28 |
-| rs13281615 | 8q24 | G | 0.11 | 0.40 |
-| rs3817198 | LSP1 | C | 0.08 | 0.30 |
-| ... | ... | ... | ... | ... |
 
 ## Risk Interpretation
 
